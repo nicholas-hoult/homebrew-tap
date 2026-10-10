@@ -18,9 +18,8 @@ cask "makit" do
 
   # Not signed or notarized yet (#262): drop the quarantine flag so Gatekeeper lets the first launch through
   postflight_steps do
-    run "/usr/bin/xattr",
-        args: ["-dr", "com.apple.quarantine", "{{appdir}}/makit.app"],
-        must_succeed: false
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/makit.app"],
+                          must_succeed: false
   end
 
   zap trash: "~/.claude/makit"
