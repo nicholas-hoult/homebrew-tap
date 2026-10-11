@@ -1,8 +1,8 @@
 cask "makit" do
-  version "0.1.4"
-  sha256 "529b5446229911dfbfbdc103b8888a426fbec9fcc72b7011ce5b109101d7aa71"
+  version "0.1.5"
+  sha256 "ad687c1f966b73dda4986782af921e68e7eea6e022d5ff8e1d67e01fa689611d"
 
-  url "https://github.com/nicholas-hoult/makit/releases/download/v#{version}/makit-#{version}.dmg"
+  url "https://github.com/nicholas-hoult/makit/releases/download/v#{version}/makit-#{version}-universal.dmg"
   name "makit"
   desc "Native manager for local Claude Code and Codex sessions"
   homepage "https://github.com/nicholas-hoult/makit"
