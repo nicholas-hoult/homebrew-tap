@@ -1,6 +1,6 @@
 cask "makit" do
-  version "0.2.3"
-  sha256 "716fc27b68575beb64b622015c9422ffbd94f6369ffee4f80fc34424e38616b9"
+  version "0.2.4"
+  sha256 "f44826efdf0bd3d1fcf8a6e4de1faa55dc51ac1940f4145d345f98ef71af8089"
 
   url "https://github.com/nicholas-hoult/makit/releases/download/v#{version}/makit-#{version}-universal.dmg"
   name "makit"
