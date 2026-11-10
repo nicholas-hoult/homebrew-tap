@@ -1,6 +1,6 @@
 cask "makit" do
-  version "0.2.6"
-  sha256 "8bc7699cedbe480e343c3f1abf47152eaf5f5062413244183c93c5749c3126f5"
+  version "0.2.7"
+  sha256 "1f6cc2fce2d267227ac9eb73203caf0a967e74b8bc8c29cb2e53870a7e77b1ee"
 
   url "https://github.com/nicholas-hoult/makit/releases/download/v#{version}/makit-#{version}-universal.dmg"
   name "makit"
@@ -15,12 +15,6 @@ cask "makit" do
   depends_on :macos
 
   app "makit.app"
-
-  # Not signed or notarized yet (#262): drop the quarantine flag so Gatekeeper lets the first launch through
-  postflight_steps do
-    run "/usr/bin/xattr", args:         ["-dr", "com.apple.quarantine", "{{appdir}}/makit.app"],
-                          must_succeed: false
-  end
 
   zap trash: "~/.claude/makit"
 end
